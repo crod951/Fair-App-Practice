@@ -5,9 +5,6 @@ import {getVehicleDetails} from "./dux/actions"
 import DetailCard from './components/detail-card/DetailCard';
 import DetailContainer from './components/detail-container/DetailContainer';
 
-import ColorText from 'components/color-text/ColorText';
-import FlexContainer from 'components/flex-container/FlexContainer';
-import GradientBackground from 'components/gradient-background/GradientBackground';
 import StyledText from 'components/styled-text/StyledText';
 
 class VehicleDetails extends Component {
