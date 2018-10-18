@@ -4,7 +4,7 @@ const DetailContainer = styled.section`
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: 20px auto;
 	padding: 0 0 65px;
 `;
