@@ -12,7 +12,7 @@ import StyledText from 'components/styled-text/StyledText';
 
 class Vehicles extends Component {
   componentDidMount() {
-    this.props.getVehicles();
+    this.props.getVehicles(this.props.location.search);
   }
 
   renderVehiclePrice = price => `$${(price / 100).toFixed(0)}`;
@@ -65,6 +65,6 @@ const mapStateToProps = (state) => ({
   ...state.vehicles
 });
 const mapDispatchToProps = (dispatch) => ({
-  getVehicles: () => dispatch(getVehicles())
+  getVehicles: page => dispatch(getVehicles(page))
 })
 export default connect(mapStateToProps, mapDispatchToProps)(Vehicles)
